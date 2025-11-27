@@ -72,7 +72,7 @@ export async function POST(request) {
     // Create Cashfree payment order request
     const cashfreeRequest = {
       order_id: cashfreeOrderId,
-      order_amount: totalAmount,
+      order_amount: parseFloat(totalAmount.toFixed(2)),
       order_currency: "INR",
       customer_details: {
         customer_id: order._id.toString(),

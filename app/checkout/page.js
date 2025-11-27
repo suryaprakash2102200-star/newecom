@@ -149,18 +149,6 @@ export default function CheckoutPage() {
         }}
       />
       
-      <div className="min-h-screen py-8 bg-gray-50 font-sans">
-      <div className="max-w-md mx-auto px-4">
-        
-        {/* Header */}
-        <div className="mb-8">
-          <Heart className="w-8 h-8 text-pink-500 fill-current mb-2" />
-          <h1 className="text-2xl font-bold text-gray-900">Thank you</h1>
-        </div>
-
-        <form onSubmit={handleSubmit} className="space-y-6">
-          
-          {/* Contact Info Section */}
           <div className="space-y-3">
             <div className="bg-white border border-gray-200 rounded-lg px-4 py-3 focus-within:border-black focus-within:ring-1 focus-within:ring-black transition-all">
               <input

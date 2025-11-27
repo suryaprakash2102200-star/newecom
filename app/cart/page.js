@@ -40,19 +40,6 @@ export default function CartPage() {
       </div>
     );
   }
-
-  return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-2xl mx-auto px-4 py-8">
-        {/* Header */}
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">Shopping Cart</h1>
-          <p className="text-sm text-gray-600">{items.length} {items.length === 1 ? 'item' : 'items'} in your bag</p>
-        </div>
-        
-        {/* Cart Items */}
-        <div className="space-y-4 mb-6">
-          {items.map((item) => (
             <div
               key={item._id}
               className="bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow"

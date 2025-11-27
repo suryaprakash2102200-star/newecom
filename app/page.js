@@ -29,9 +29,9 @@ export default async function Home({ searchParams }) {
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-2xl mx-auto px-4 py-8 sm:py-12">
           <div className="text-center space-y-4 animate-fade-in">
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent">
-              Alpha Engraving
-            </h1>
+            <Link href="/" className="flex items-center justify-center text-3xl sm:text-4xl font-bold tracking-tight bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent">
+              Articuture
+            </Link>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
               Discover our handcrafted collection of personalized engravings
             </p>

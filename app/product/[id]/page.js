@@ -10,7 +10,7 @@ export default function ProductPage({ params }) {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const addItem = useCartStore((state) => state.addItem);
+  const addItem = useCartStore((state) => state.addToCart);
 
   // Fetch product on mount
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function ProductPage({ params }) {
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-4 sticky top-0 bg-white z-10">
         <div className="w-6"></div> {/* Spacer */}
-        <h1 className="text-lg font-bold text-black">Alpha Engraving</h1>
+        <h1 className="text-lg font-bold text-black">Articuture</h1>
         <Link href="/cart">
           <ShoppingBag className="w-6 h-6 text-black" />
         </Link>
@@ -121,7 +121,7 @@ export default function ProductPage({ params }) {
           <div className="flex items-center justify-between">
             <span className="font-bold text-black">Support</span>
             <span className="flex-1 mx-2 border-b border-dotted border-gray-400 mb-1"></span>
-            <span className="text-gray-600">DM me on ig alpha_engraving for queries</span>
+            <span className="text-gray-600">DM me on ig articuture for queries</span>
           </div>
         </div>
 
